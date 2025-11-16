@@ -6,7 +6,7 @@ The primary objective was to match the accessibility patterns from the W3C ARIA 
 
 Live Demo (Netlify Deployment)
 
-Add your Netlify URL here after deployment
+https://junedslicksilder.netlify.app/
 
 
 
