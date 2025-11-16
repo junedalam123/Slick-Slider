@@ -37,7 +37,7 @@ const Carousel = ({ slides = SLIDE_DATA }) => {
       pauseOnFocus: false,
       beforeChange: (_, next) => setIndex(next),
     }),
-    [slides.length]
+    []
   );
 
   /** Pause / Play */
