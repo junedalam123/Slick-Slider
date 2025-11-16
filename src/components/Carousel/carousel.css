@@ -1,0 +1,179 @@
+
+.hero-carousel {
+  max-width: 900px;
+  margin: 24px auto;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background: #111;
+  padding: 12px;
+}
+
+
+.slick-slider,
+.slick-list,
+.slick-track {
+  overflow: visible !important;
+}
+
+.hero-carousel .slick-dots {
+  bottom: 12px;
+}
+
+.slide,
+.carousel-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.carousel-image,
+.slide-img {
+  width: 100%;
+  height: 420px;
+  max-height: 65vh;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+
+.slide-overlay,
+.carousel-text {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  pointer-events: none;
+}
+
+
+.slide-title,
+.carousel-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: rgba(0,0,0,0.55);
+  padding: 6px 10px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.slide-caption,
+.carousel-caption {
+  background: rgba(0,0,0,0.6);
+  padding: 6px 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+.carousel-btn {
+  position: absolute;
+  z-index: 50;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s ease;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Pause button */
+.pause-btn {
+  top: 12px;
+  left: 12px;
+}
+
+.arrow-btn {
+  background: #007bff;
+  color: #fff;
+  font-weight: 700;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* Prev arrow */
+.arrow-btn.prev {
+  top: 12px;
+  right: 62px;
+}
+
+/* Next arrow */
+.arrow-btn.next {
+  top: 12px;
+  right: 12px;
+}
+
+
+.slick-dots li button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.carousel-btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(0,123,255,0.6);
+}
+
+.carousel-btn:focus {
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .carousel-image,
+  .slide-img {
+    height: 300px;
+  }
+
+  .slide-title,
+  .carousel-title {
+    font-size: 1.05rem;
+  }
+
+  .carousel-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .arrow-btn.prev {
+    right: 54px;
+  }
+
+  .arrow-btn.next {
+    right: 10px;
+  }
+}
